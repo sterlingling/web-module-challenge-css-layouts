@@ -1,37 +1,47 @@
 /* Add CSS styling here */
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size:1.6rem;
+}
+h1{
+    font-size: 4rem;
+}
+section header{
+    padding:4% 0;
+}
 nav {
     display: flex;
     justify-content: space-between;
 }
 
-.topsection {
-    display: flex;
-    justify-content: center;
-}
-
-.img-button {
+.topsection {  
     background-image: url("https://picsum.photos/600/400");
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    font-size: large;
-    width: 600px;
-    height: 400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:50vh;
+    text-align: center;
 }
+
 
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
     justify-content: space-evenly;
-    padding: 20px;
+
+}
+.row div{
+
+    width: 30%;
+    margin:2% 0;
 }
 
-.row2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 20px;
-}
 
 .port-element {
     text-align: center;
@@ -49,12 +59,43 @@ button:hover {
     color: white;
     border: white solid 1px;
 }
-button a{
+
+button a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
 }
+
 footer {
     background-color: lightgrey;
     padding: 20px;
     text-align: center;
+}
+
+@media (max-width: 500px) {
+    nav {
+flex-direction: column;
+align-items: center;
+width:100%;
+    }
+.links{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.links button{
+    width:40%;
+    margin: 1% 0;
+}
+.topsection{
+    width:100%;
+    align-items: center;
+}
+.port-element img{
+    width:90%;
+}
+.row div{
+width:40%;
+
+}
 }
